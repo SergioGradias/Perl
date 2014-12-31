@@ -1,0 +1,19 @@
+#!/bin/perl
+
+use strict;
+use warnings;
+
+my $contador=10;
+
+while($contador>1){
+	print "Hay $contador botellas de cerveza en la pared, $contador botellas de cerveza\n";
+	$contador --;
+	print "Quito una botella de cerveza, $contador botellas de cerveza en la pared\n";
+	print"\n"
+}
+
+print "Hya unna botella de cerveza en la pared, $contador botella de cerveza\n";
+$contador--;
+print "Quito una botella de cerveza, no mas botellas de cerveza en la pared\n";
+print "Ve y compra mas botellas de cerveza\n";
+print "\n"
