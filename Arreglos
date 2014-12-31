@@ -1,0 +1,18 @@
+#!/bin/perl
+
+use strict;
+use warnings;
+
+my @arreglo1 = (1,2,3,4,5);
+my @arreglo2 = ("Hola", "a", "todo", "Mundo");
+
+foreach my $slot (@arreglo1){
+	print $slot * 10;
+	print "\n";
+}
+
+print "Esta es mi frase: ";
+foreach my $space (@arreglo2){
+	print "$space ";
+}
+print "\n";
