@@ -1,0 +1,11 @@
+#!/bin/perl
+
+use strict;
+use warnings;
+
+my $contador=0;
+
+while($contador<11){
+	print "Estas en el nuemor $contador\n";
+	$contador ++;
+}
