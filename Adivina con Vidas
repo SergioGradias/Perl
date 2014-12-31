@@ -51,4 +51,8 @@ while ( $guess ne $num ) {
 }
 
 print "Buen trabajo\n";
-print "Tus adivinaste $guessnum veces. Tus numeros fueron: @guesses\n";
+print "Tu adivinaste $guessnum veces. Tus numero fueron:";
+foreach my $slot (@guesses) {
+    print "$slot, ";
+}
+print "\n";
