@@ -1,5 +1,0 @@
-Perl
-====
-
-Practicas
-jhkjjkh
