@@ -1,0 +1,24 @@
+#!/bin/perl
+
+use strict;
+use warnings;
+
+print "Dame tus calificaciones: ";
+my $datos = readline STDIN;
+chomp $datos;
+
+my $delimitador = ", ";
+my @arreglo = split($delimitador, $datos);
+
+my $total = 0;
+my $contador = 0;
+
+foreach my $slot(@arreglo){
+	$total = $slot + $total;
+	$contador ++;
+}
+
+$total = $total / $contador;
+
+print "El promedio de tus calificaciones es : $total";
+print "\n";
