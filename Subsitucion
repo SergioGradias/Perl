@@ -1,0 +1,10 @@
+#!/bin/perl
+
+use strict;
+use warnings;
+
+my $string = "Estas vacaciones quiero ir a California";
+print "Esto es como se lee antes:\n", $string, "\n";
+
+$string =~ s/California/Japon/;
+print "Esto es como se lee despues:\n", $string, "\n";
