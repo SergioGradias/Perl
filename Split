@@ -1,0 +1,16 @@
+#!/bin/perl
+
+use strict;
+use warnings;
+
+print "Cuales dias quieres trabajar: ";
+my $dias = readline STDIN;
+chomp  $dias;
+my $delimitador = ", ";
+my @arregloDias = split ($delimitador, $dias);
+my $contador = 0;
+
+print "El usuario va a trabajar los dias:\n";
+foreach my $slot (@arregloDias){
+	print "$slot\n";
+}
