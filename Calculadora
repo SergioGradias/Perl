@@ -1,0 +1,66 @@
+#!/usr/bin/perl
+
+use 5.010;
+use strict;
+use warnings;
+
+print "Dame un numero\n";
+my $num1=readline STDIN;
+chomp $num1;
+
+print "Dame el segundo numero\n";
+my $num2=readline STDIN;
+chomp $num2;
+
+my $eleccion;
+my $respuestas;
+
+&menu;
+
+sub menu{
+	print "Bienvenido\n", "1. Suma\n", "2. Resta\n", "3. Multiplicacion\n", "4. Dividir\n", "5. Salir\n", "\n", "Cual es tu eleccion?\n";
+	
+	$eleccion=readline STDIN;
+	chomp $eleccion;
+	
+	if    ($eleccion==1){
+		&suma;
+	}
+	elsif ($eleccion==2){
+		&resta;
+	}
+	elsif ($eleccion==3){
+		&mul;
+	}
+	elsif ($eleccion==4){
+		&div;
+	}
+	elsif ($eleccion==5){
+		print "Adios, gracias por usar el servicio\n";
+		exit;
+	}		
+}
+
+sub suma{
+	$respuestas= $num1+$num2;
+	print "Tu resultado es = $respuestas\n", "\n";
+	&menu;
+}
+
+sub resta{
+	$respuestas= $num1+$num2;
+	print "Tu resultado es = $respuestas\n", "\n";
+	&menu;
+}
+
+sub mul{
+	$respuestas= $num1+$num2;
+	print "Tu resultado es = $respuestas\n", "\n";
+	&menu;
+}
+
+sub div{
+	$respuestas= $num1+$num2;
+	print "Tu resultado es = $respuestas\n", "\n";
+	&menu;
+}
