@@ -1,0 +1,54 @@
+#!/bin/perl
+
+use strict;
+use warnings;
+
+my $num = rand(50);
+$num = int($num + 1);
+
+my @guesses;
+my $guessnum = 0;
+my $guess = 0;
+my $lifes = 10;
+
+print $num;
+
+
+while ( $guess ne $num ) {
+				    
+	print "Cual es tu numero?\n";
+	$guess = readline STDIN;
+	chomp $guess;
+			    
+	if ( $guess < $num ) { 
+		print "Mas grande!\n";
+		$lifes --;
+		if ($lifes == 0){
+			print "Has perido, vuelva a intentarlo\n";
+			exit;
+		}
+	}
+			 
+	elsif ( $guess > $num ) {
+		print "Mas chico!\n";
+		$lifes --;
+		if ($lifes == 0){
+			print "Has perido, vuelva a intentarlo\n";
+			exit;
+		}
+	}
+			 
+	push (@guesses, $guess);
+	$guessnum++;
+	
+	if ($lifes > 1){
+		print "Te quedan $lifes vidas\n";
+		print "\n";
+	}
+	else {
+		print "Te queda $lifes vida, cuidado!!! ultima oportunidad";
+	}
+}
+
+print "Buen trabajo\n";
+print "Tus adivinaste $guessnum veces. Tus numeros fueron: @guesses\n";
