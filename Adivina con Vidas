@@ -24,7 +24,7 @@ while ( $guess ne $num ) {
 		print "Mas grande!\n";
 		$lifes --;
 		if ($lifes == 0){
-			print "Has perido, vuelva a intentarlo\n";
+			print "Has perdido, vuelva a intentarlo\n";
 			exit;
 		}
 	}
@@ -33,7 +33,7 @@ while ( $guess ne $num ) {
 		print "Mas chico!\n";
 		$lifes --;
 		if ($lifes == 0){
-			print "Has perido, vuelva a intentarlo\n";
+			print "Has perdido, vuelva a intentarlo\n";
 			exit;
 		}
 	}
