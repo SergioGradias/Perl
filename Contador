@@ -6,6 +6,6 @@ use warnings;
 my $contador=0;
 
 while($contador<11){
-	print "Estas en el nuemor $contador\n";
+	print "Estas en el numero $contador\n";
 	$contador ++;
 }
